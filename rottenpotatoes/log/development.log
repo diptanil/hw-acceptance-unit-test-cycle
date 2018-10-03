@@ -975,3 +975,124 @@ Completed 200 OK in 36ms (Views: 14.3ms | ActiveRecord: 1.1ms)
 
 
 Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-02 22:09:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:49:27 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:50:54 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:53:08 +0000
+  [1m[36m (4.1ms)[0m  [1mDROP TABLE "movies"[0m
+  [1m[35m (4.0ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "rating" varchar, "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime, "director" varchar) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.9ms)[0m  DROP TABLE "movies"
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "rating" varchar, "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime, "director" varchar) [0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aladdin"], ["rating", "G"], ["release_date", "1992-11-25 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.842245"], ["updated_at", "2018-10-03 03:53:59.842245"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Terminator"], ["rating", "R"], ["release_date", "1984-10-26 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.849136"], ["updated_at", "2018-10-03 03:53:59.849136"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "When Harry Met Sally"], ["rating", "R"], ["release_date", "1989-07-21 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.854527"], ["updated_at", "2018-10-03 03:53:59.854527"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Help"], ["rating", "PG-13"], ["release_date", "2011-08-10 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.861311"], ["updated_at", "2018-10-03 03:53:59.861311"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Chocolat"], ["rating", "PG-13"], ["release_date", "2001-01-05 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.866593"], ["updated_at", "2018-10-03 03:53:59.866593"]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Amelie"], ["rating", "R"], ["release_date", "2001-04-25 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.872570"], ["updated_at", "2018-10-03 03:53:59.872570"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "2001: A Space Odyssey"], ["rating", "G"], ["release_date", "1968-04-06 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.877594"], ["updated_at", "2018-10-03 03:53:59.877594"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Incredibles"], ["rating", "PG"], ["release_date", "2004-11-05 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.883187"], ["updated_at", "2018-10-03 03:53:59.883187"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Raiders of the Lost Ark"], ["rating", "PG"], ["release_date", "1981-06-12 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.889349"], ["updated_at", "2018-10-03 03:53:59.889349"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Chicken Run"], ["rating", "G"], ["release_date", "2000-06-21 00:00:00.000000"], ["created_at", "2018-10-03 03:53:59.894763"], ["updated_at", "2018-10-03 03:53:59.894763"]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:54:06 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:54:41 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:57:08 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.35 at 2018-10-03 03:58:00 +0000
+
+
+Started GET "/assets/rails.png" for 50.24.113.151 at 2018-10-03 04:39:59 +0000
+
+
+Started GET "/assets/rails.png" for 50.24.113.151 at 2018-10-03 04:43:30 +0000
+
+
+Started GET "/assets/rails.png" for 50.24.113.151 at 2018-10-03 04:43:33 +0000
+
+
+Started GET "/movies" for 50.24.113.151 at 2018-10-03 04:43:37 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 204ms (Views: 177.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 50.24.113.151 at 2018-10-03 04:43:37 +0000
+
+
+Started GET "/assets/application.self-ac4347b135ab8935f2dd20089f2acc8bec1d6b2ad528a80fcb03cd445dbd4d27.js?body=1" for 50.24.113.151 at 2018-10-03 04:43:37 +0000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 50.24.113.151 at 2018-10-03 04:43:37 +0000
+
+
+Started GET "/assets/application.self-2b9b4ceb35a4568bfbe3001eb6cf7d691787c8ec9b2018eecbc3c235cc74b7a4.css?body=1" for 50.24.113.151 at 2018-10-03 04:43:38 +0000
+
+
+Started GET "/movies/1" for 50.24.113.151 at 2018-10-03 04:44:00 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1/same_director" for 50.24.113.151 at 2018-10-03 04:44:02 +0000
+Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to https://f0139e37ccff4e4db80148918f60e6ac.vfs.cloud9.us-east-2.amazonaws.com/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/movies" for 50.24.113.151 at 2018-10-03 04:44:03 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 50.24.113.151 at 2018-10-03 04:45:53 +0000
+
+
+Started GET "/movies" for 50.24.113.151 at 2018-10-03 04:45:54 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 208ms (Views: 181.6ms | ActiveRecord: 1.5ms)
