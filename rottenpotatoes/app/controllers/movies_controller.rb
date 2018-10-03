@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   
   def movie_params
-    params.require(:movie).permit(:title, :rating, :description, :release_date)
+    params.require(:movie).permit(:title, :rating, :description, :release_date, :director)
   end
 
   def show
@@ -32,7 +32,7 @@ class MoviesController < ApplicationController
     end
     @movies = Movie.where(rating: @selected_ratings.keys).order(ordering)
   end
-
+  
   def new
     # default: render 'new' template
   end
@@ -52,6 +52,17 @@ class MoviesController < ApplicationController
     @movie.update_attributes!(movie_params)
     flash[:notice] = "#{@movie.title} was successfully updated."
     redirect_to movie_path(@movie)
+  end
+  
+  def same_director
+    @movie = Movie.find(params[:id])
+    if @movie.director.blank?
+      flash[:notice] = "'#{@movie.title}' has no director info"
+      redirect_to movies_path
+    else
+      @movies = Movie.where(director: @movie.director)
+    end
+    
   end
 
   def destroy

@@ -17,6 +17,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'simplecov', :require => false
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
 end
@@ -34,7 +35,6 @@ gem 'uglifier', '>= 2.7.1'
 
 gem 'jquery-rails'
 gem 'haml'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
